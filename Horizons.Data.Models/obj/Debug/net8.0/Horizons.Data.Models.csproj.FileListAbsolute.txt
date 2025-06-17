@@ -1,0 +1,16 @@
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/bin/Debug/net8.0/Horizons.Data.Models.deps.json
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/bin/Debug/net8.0/Horizons.Data.Models.dll
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/bin/Debug/net8.0/Horizons.Data.Models.pdb
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/bin/Debug/net8.0/Horizons.GCommon.dll
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/bin/Debug/net8.0/Horizons.GCommon.pdb
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.csproj.AssemblyReference.cache
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.AssemblyInfoInputs.cache
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.AssemblyInfo.cs
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.csproj.CoreCompileInputs.cache
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.sourcelink.json
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.DB7772F9.Up2Date
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.dll
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/refint/Horizons.Data.Models.dll
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/Horizons.Data.Models.pdb
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.Data.Models/obj/Debug/net8.0/ref/Horizons.Data.Models.dll

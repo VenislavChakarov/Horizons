@@ -1,0 +1,12 @@
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/bin/Debug/net8.0/Horizons.GCommon.deps.json
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/bin/Debug/net8.0/Horizons.GCommon.dll
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/bin/Debug/net8.0/Horizons.GCommon.pdb
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/Horizons.GCommon.GeneratedMSBuildEditorConfig.editorconfig
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/Horizons.GCommon.AssemblyInfoInputs.cache
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/Horizons.GCommon.AssemblyInfo.cs
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/Horizons.GCommon.csproj.CoreCompileInputs.cache
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/Horizons.GCommon.sourcelink.json
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/Horizons.GCommon.dll
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/refint/Horizons.GCommon.dll
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/Horizons.GCommon.pdb
+/Users/venislavchakarov/Document/Develper/Horizons/Horizons.GCommon/obj/Debug/net8.0/ref/Horizons.GCommon.dll
