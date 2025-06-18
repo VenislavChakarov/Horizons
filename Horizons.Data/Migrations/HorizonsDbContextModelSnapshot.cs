@@ -65,6 +65,41 @@ namespace Horizons.Data.Migrations
                     b.HasIndex("TerrainId");
 
                     b.ToTable("Destinations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "A stunning historical landmark nestled in the Rila Mountains.",
+                            ImageUrl = "https://img.etimg.com/thumb/msid-112831459,width-640,height-480,imgsize-2180890,resizemode-4/rila-monastery-bulgaria.jpg",
+                            IsDeleted = false,
+                            Name = "Rila Monastery",
+                            PublishedOn = new DateTime(2025, 6, 18, 13, 26, 36, 153, DateTimeKind.Local).AddTicks(4780),
+                            PublisherId = "7699db7d-964f-4782-8209-d76562e0fece",
+                            TerrainId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "The sand at Durankulak Beach showcases a pristine golden color, creating a beautiful contrast against the azure waters of the Black Sea.",
+                            ImageUrl = "https://travelplanner.ro/blog/wp-content/uploads/2023/01/durankulak-beach-1-850x550.jpg.webp",
+                            IsDeleted = false,
+                            Name = "Durankulak Beach",
+                            PublishedOn = new DateTime(2025, 6, 18, 13, 26, 36, 153, DateTimeKind.Local).AddTicks(4820),
+                            PublisherId = "7699db7d-964f-4782-8209-d76562e0fece",
+                            TerrainId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "A mysterious cave located in the Rhodope Mountains.",
+                            ImageUrl = "https://detskotobnr.binar.bg/wp-content/uploads/2017/11/Diavolsko_garlo_17.jpg",
+                            IsDeleted = false,
+                            Name = "Devil's Throat Cave",
+                            PublishedOn = new DateTime(2025, 6, 18, 13, 26, 36, 153, DateTimeKind.Local).AddTicks(4830),
+                            PublisherId = "7699db7d-964f-4782-8209-d76562e0fece",
+                            TerrainId = 7
+                        });
                 });
 
             modelBuilder.Entity("Horizons.Data.Models.Terrain", b =>
@@ -83,6 +118,48 @@ namespace Horizons.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Terrains");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Mountain"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Beach"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Forest"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Plain"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Urban"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Village"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Cave"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Canyon"
+                        });
                 });
 
             modelBuilder.Entity("Horizons.Data.Models.UserDestination", b =>
@@ -215,6 +292,24 @@ namespace Horizons.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "7699db7d-964f-4782-8209-d76562e0fece",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "88216c49-9280-4f31-8c5f-2cae6f8bb467",
+                            Email = "admin@horizons.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@HORIZONS.COM",
+                            NormalizedUserName = "ADMIN@HORIZONS.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEB6JmO1NIv/7b7ijze6IYv9G4OoWXqtfjzPPHsLK/Acxi1z0tVZ8wBnvI7D9VssGqw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "888304ff-6d13-4d07-9282-91e1216ae49c",
+                            TwoFactorEnabled = false,
+                            UserName = "admin@horizons.com"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>

@@ -10,7 +10,8 @@ public class EntityConstrains
         public const int DescriptionMinLength = 10;
         public const int DescriptionMaxLength = 250;
         
-        public const string DateFormat = "dd-MM-yyyy";
+        public const int PublishedOnLength = 10;
+        public const string DateFormating  = "dd-MM-yyyy";
     }
 
     public static class Terrain

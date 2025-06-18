@@ -8,7 +8,7 @@ public class IdentityUserConfiguration : IEntityTypeConfiguration<IdentityUser>
 {
     public void Configure(EntityTypeBuilder<IdentityUser> entity) 
     {
-        //entity.HasData(this.CreateDefaultAdminUser());
+        entity.HasData(this.CreateDefaultAdminUser());
          
     }
 

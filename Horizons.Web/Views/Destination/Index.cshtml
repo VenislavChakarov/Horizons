@@ -5,8 +5,9 @@
     IsFavorite: A boolean property that indicates whether the currently logged-in user has already added this destination to their favorites.
     If true, the "Favorites" button will not be displayed.
 *@
-
-@* @{
+@using Horizons.Web.ViewModels.Destination;
+@model IEnumerable<AllDestinationsIndexViewModel>
+ @{
     ViewData["Title"] = "All Destinations";
 }
 
@@ -17,7 +18,18 @@
         <a asp-controller="Destination" asp-action="Add" class="btn btn-primary">
             <i class="fas fa-plus"></i> Add Destination</a>
     }
-</div>
+</div>      
+ @*
+    the destinatin view model should contain the following properties:
+    - Id: The unique identifier for the destination.
+    - Name: The name of the destination.
+    - ImageUrl: The URL of the destination's image.
+    - Terrain: The type of terrain (e.g., mountain, beach, etc.).
+    - FavoritesCount: The number of times the destination has been favorited.
+    - IsPublisher: A boolean indicating if the user is the publisher of the destination.
+    - IsFavorite: A boolean indicating if the user has already favorited the destination.
+    
+ *@
 <hr />
 
 <div class="row text-center">
@@ -60,4 +72,3 @@
         </div>
     }
 </div>
- *@

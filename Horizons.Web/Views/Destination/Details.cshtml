@@ -6,7 +6,10 @@
     If true, the "Favorites" button will not be displayed.
 *@
 
-@* @{
+@using Horizons.Web.ViewModels.Destination;
+@model Horizons.Web.ViewModels.Destination.DestinationDetailesViewModel
+
+@{
     ViewData["Title"] = "Destination Details";
 }
 
@@ -34,7 +37,7 @@
             <p class="card-text">@Model.Description</p>
             <hr />
             <p class="card-text"><small class="text-muted">Terrain: @Model.Terrain</small></p>
-            <p class="card-text"><small class="text-muted">Published On: @Model.PublishedOn.ToString("dd/MM/yyyy")</small></p>
+            <p class="card-text"><small class="text-muted">Published On: @Model.PublishedOn)</small></p>
             <p class="card-text"><small class="text-muted">Publisher: @Model.Publisher</small></p>
             <hr />
         </div>
@@ -65,4 +68,18 @@
         </div>
     </div>
 </div>
- *@
+ 
+ 
+@*
+    the details view model should contain the following properties:
+    - Id: The unique identifier for the destination.
+    - Name: The name of the destination.
+    - Description: A brief description of the destination.
+    - ImageUrl: The URL of the destination's image.
+    - Terrain: The type of terrain (e.g., mountain, beach, etc.).
+    - PublishedOn: The date when the destination was published.
+    - Publisher: The name of the user who published the destination.
+    - IsPublisher: A boolean indicating if the user is the publisher of the destination.
+    - IsFavorite: A boolean indicating if the user has already favorited the destination.
+    
+*@

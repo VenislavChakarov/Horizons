@@ -4,6 +4,8 @@ namespace Horizons.Web
 
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
+    using Horizons.Services.Core.Contracts;
+    using Horizons.Services.Core;
     public class Program
     {
         public static void Main(string[] args)
@@ -19,9 +21,17 @@ namespace Horizons.Web
             builder.Services.AddDefaultIdentity<IdentityUser>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
             })
                 .AddEntityFrameworkStores<HorizonsDbContext>();
             builder.Services.AddControllersWithViews();
+            // Register IDestinationService and its implementation
+            builder.Services.AddScoped<IDestinationService, DestinationService>();
+            builder.Services.AddScoped<ITerrainService, TerrainService>(); 
+            
 
             var app = builder.Build();
 

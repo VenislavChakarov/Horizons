@@ -47,8 +47,8 @@ public class DestinationConfiguration : IEntityTypeConfiguration<Destination>
             .HasForeignKey(d => d.TerrainId);
 
         
-       //  entity
-       //     .HasData(this.GenerateSeedDestinations());
+         entity
+            .HasData(this.GenerateSeedDestinations());
 
     }
 
