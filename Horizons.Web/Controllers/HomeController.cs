@@ -1,15 +1,24 @@
-﻿namespace Horizons.Web.Controllers
+﻿using Microsoft.AspNetCore.Authorization;
+
+namespace Horizons.Web.Controllers
 {
     using System.Diagnostics;
 
     using ViewModels;
 
     using Microsoft.AspNetCore.Mvc;
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+        [AllowAnonymous]
         public IActionResult Index()
         {
+            if (IsUserAuthenticated())
+            {
+                return RedirectToAction("Index", "Destination");
+            }
+            
             return View();
+            
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

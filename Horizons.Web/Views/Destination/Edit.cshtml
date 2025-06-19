@@ -1,4 +1,6 @@
-﻿@* @{
+﻿@using Horizons.Web.ViewModels.Destination
+@model Horizons.Web.ViewModels.Destination.EditDestinationViewModel
+@{
     ViewData["Title"] = "Edit Destination";
 }
 
@@ -55,4 +57,16 @@
         </form>
     </div>
 </div>
- *@
+ 
+ 
+@* 
+    The view model for edit should contain:
+    - Id
+    - Name
+    - TerrainId
+    - Description
+    - ImageUrl
+    - PublishedOn
+    - PublisherId
+    - Terrains (for the dropdown)
+    *@

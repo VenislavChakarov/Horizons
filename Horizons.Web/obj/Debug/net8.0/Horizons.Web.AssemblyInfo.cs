@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Horizons.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6697cf88b3027e2b26229be68843c1a8d2e0ac7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d043a136c441f19726a0b0f056315400b9377c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Horizons.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Horizons.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
