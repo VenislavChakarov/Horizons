@@ -34,6 +34,7 @@ namespace Horizons.Web
             // Register IDestinationService and its implementation
             builder.Services.AddScoped<IDestinationService, DestinationService>();
             builder.Services.AddScoped<ITerrainService, TerrainService>(); 
+            builder.Services.AddScoped<IFavoritesService, FavoritesService>();
             
 
             var app = builder.Build();

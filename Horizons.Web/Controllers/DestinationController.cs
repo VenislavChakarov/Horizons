@@ -10,11 +10,13 @@ public class DestinationController : BaseController
 {
     private readonly IDestinationService _destinationService;
     private readonly ITerrainService _terrainService;
+    private readonly IFavoritesService _favoritesService;
 
-    public DestinationController(IDestinationService destinationService, ITerrainService terrainService)
+    public DestinationController(IDestinationService destinationService, ITerrainService terrainService, IFavoritesService favoritesService)
     {
         this._destinationService = destinationService;
         this._terrainService = terrainService;
+        this._favoritesService = favoritesService;
     }
 
     [AllowAnonymous]
@@ -177,9 +179,7 @@ public class DestinationController : BaseController
             if (deleteModel == null)
             {
                 return RedirectToAction(nameof(Index));
-                ;
             }
-
             return View(deleteModel);
         }
         catch (Exception e)
@@ -217,4 +217,88 @@ public class DestinationController : BaseController
             return View(deleteModel);
         }
     }
+    
+    public async Task<IActionResult> Favorites()
+    {
+        if (!IsUserAuthenticated())
+        {
+            return RedirectToAction("Index", "Home");
+        }
+
+        var userId = GetUserId();
+
+        var favoritesDestinationsModel = await _favoritesService.GetUserFavoritesAsync(userId);
+        
+        
+        var model = favoritesDestinationsModel.Select(f => new AllDestinationsIndexViewModel
+        {
+            Id = f.DestinationId,
+            Name = f.Name,
+            ImageUrl = f.ImageUrl,
+            Terrain = f.Terrain
+        });
+
+
+        return View(model);
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> AddToFavorites(string id)
+    {
+        try
+        {
+            if (!IsUserAuthenticated())
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var userId = GetUserId();
+
+            bool isInFavorite = await _favoritesService.IsDestinationInFavoritesAsync(userId, id);
+
+            if (!isInFavorite)
+            {
+                await _favoritesService.AddToFavoritesAsync(userId, id);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return RedirectToAction(nameof(Index), "Home");
+        }
+        
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> RemoveFromFavorites(string id)
+    {
+        try
+        {
+            if (!IsUserAuthenticated())
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            var userId = GetUserId();
+        
+
+            bool isinFavorites = await _favoritesService.IsDestinationInFavoritesAsync(userId, id);
+
+            if (isinFavorites)
+            {
+              await _favoritesService.RemoveFromFavoritesAsync(userId, id);
+            }
+
+            return RedirectToAction(nameof(Favorites));
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return RedirectToAction(nameof(Index), "Home");
+        }
+       
+    }
+    
 }

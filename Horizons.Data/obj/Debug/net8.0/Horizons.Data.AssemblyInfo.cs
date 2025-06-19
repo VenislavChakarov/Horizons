@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Horizons.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d043a136c441f19726a0b0f056315400b9377c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4449340e89f9f3355390f89f5318dec5a63f8cbf")]
 [assembly: System.Reflection.AssemblyProductAttribute("Horizons.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Horizons.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

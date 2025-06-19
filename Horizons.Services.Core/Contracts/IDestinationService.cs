@@ -16,5 +16,6 @@
         
         Task<bool> SoftDeleteDestinationAsync(DeleteDestinationViewModel model, string? userId);
         
+        
     }
 }
